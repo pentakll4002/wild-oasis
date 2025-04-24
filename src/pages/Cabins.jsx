@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
 import { getCabins } from "/src/services/apiCabins.js";
+import CabinTable from "../features/cabins/CabinTable";
 
 function Cabins() {
   useEffect(function () {
@@ -9,12 +10,18 @@ function Cabins() {
   }, []);
 
   return (
-    <Row type="horizontal">
-      <Heading as="h1">All cabins</Heading>
-      <p>TEST</p>
+    <>
+      <Row type="horizontal">
+        <Heading as="h1">Filter / Sort</Heading>
+        <p>TEST</p>
 
-      <img src="https://jbhtbkagcjlpstgqyjgd.supabase.co/storage/v1/object/public/cabin-images//cabin-001.jpg" />
-    </Row>
+        <img src="https://jbhtbkagcjlpstgqyjgd.supabase.co/storage/v1/object/public/cabin-images//cabin-001.jpg" />
+      </Row>
+
+      <Row>
+        <CabinTable />
+      </Row>
+    </>
   );
 }
 

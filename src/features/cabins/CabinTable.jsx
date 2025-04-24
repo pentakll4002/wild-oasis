@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// eslint-disable-next-line
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
 
@@ -9,6 +10,7 @@ const Table = styled.div`
   overflow: hidden;
 `;
 
+// eslint-disable-next-line
 const TableHeader = styled.header`
   display: grid;
   grid-template-columns: 0.6fr 1.8fr 2.2fr 1fr 1fr 1fr;
@@ -23,3 +25,13 @@ const TableHeader = styled.header`
   color: var(--color-grey-600);
   padding: 1.6rem 2.4rem;
 `;
+
+function CabinTable() {
+  return (
+    <div>
+      Table
+    </div>
+  )
+}
+
+export default CabinTable
