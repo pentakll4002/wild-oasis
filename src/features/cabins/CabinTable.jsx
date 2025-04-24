@@ -34,10 +34,7 @@ function CabinTable() {
   } = useQuery({
     queryKey: ["cabins"],
     queryFn: getCabins,
-  });
-
-  console.log("Cabins data:", cabins);
-  
+  });  
 
 
   if (isLoading) return <Spinner />;
@@ -46,7 +43,6 @@ function CabinTable() {
   return (
     <Table role="table">
       <TableHeader role="row">
-        <div></div>
         <div>Cabin</div>
         <div>Capacity</div>
         <div>Price</div>

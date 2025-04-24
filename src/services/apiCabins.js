@@ -14,4 +14,4 @@ async function getCabins() {
   return data;
 }
 
-export default getCabins;
+export default getCabins;  // Sử dụng default export

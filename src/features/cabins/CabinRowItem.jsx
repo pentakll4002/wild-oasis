@@ -56,7 +56,6 @@ function CabinRowItem({ cabin }) {
   );
 }
 
-// Định nghĩa kiểu dữ liệu cho props
 CabinRowItem.propTypes = {
   cabin: PropTypes.shape({
     name: PropTypes.string.isRequired,

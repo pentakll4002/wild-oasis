@@ -12,10 +12,8 @@ function Cabins() {
   return (
     <>
       <Row type="horizontal">
-        <Heading as="h1">Filter / Sort</Heading>
-        <p>TEST</p>
-
-        <img src="https://jbhtbkagcjlpstgqyjgd.supabase.co/storage/v1/object/public/cabin-images//cabin-001.jpg" />
+        <Heading as="h1">All Cabins</Heading>
+        <p>Filter / Soft</p>
       </Row>
 
       <Row>
