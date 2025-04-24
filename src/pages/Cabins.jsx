@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Heading from "@/ui/Heading";
 import Row from "@/ui/Row";
-import getCabins from "@/services/apiCabins.js";
+import { getCabins } from "@/services/apiCabins.js";
 import CabinTable from "@/features/cabins/CabinTable";
 
 function Cabins() {
@@ -12,7 +12,7 @@ function Cabins() {
   return (
     <>
       <Row type="horizontal">
-        <Heading as="h1">All Cabins</Heading>
+        <Heading type="h1">All Cabins</Heading>
         <p>Filter / Soft</p>
       </Row>
 

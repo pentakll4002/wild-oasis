@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import styled from "styled-components";
-import getCabins from "@/services/apiCabins.js";
+import { getCabins } from "@/services/apiCabins.js";
 import Spinner from "@/ui/Spinner.jsx";
 import CabinRowItem from "@/features/cabins/CabinRowItem";
 
@@ -34,11 +34,10 @@ function CabinTable() {
   } = useQuery({
     queryKey: ["cabins"],
     queryFn: getCabins,
-  });  
-
+  });
 
   if (isLoading) return <Spinner />;
-  if (error) return <p>Lỗi: {error.message}</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   return (
     <Table role="table">
@@ -54,7 +53,6 @@ function CabinTable() {
         <CabinRowItem key={cabin.id} cabin={cabin} />
       ))}
     </Table>
-    
   );
 }
 
