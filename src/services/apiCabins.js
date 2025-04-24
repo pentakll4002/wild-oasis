@@ -1,9 +1,10 @@
+// apiCabins.js
 import supabase from "./supabase";
 
-export async function getCabins() {
+async function getCabins() {
   const { data, error } = await supabase
-  .from("cabins")
-  .select("*");
+    .from("cabins")
+    .select("*");
 
   if (error) {
     console.log(error);
@@ -12,3 +13,5 @@ export async function getCabins() {
 
   return data;
 }
+
+export default getCabins;
